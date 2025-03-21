@@ -25,10 +25,10 @@ FCT_BGN()
          /* these are valid transitions */ 
          fct_chk(transition(OFF, POWER_ON) == INIT);
 
-         fct_chk(transition(ISBETWEEN2AND3_DOWN, CAB_POSITION_FLOOR_2) == FLOOR2);
-         fct_chk(transition(ISBETWEEN2AND3_UP, CAB_POSITION_FLOOR_3) == FLOOR3);
-         fct_chk(transition(ISBETWEEN3AND4_DOWN, CAB_POSITION_FLOOR_3) == FLOOR3);
-         fct_chk(transition(ISBETWEEN3AND4_UP, CAB_POSITION_FLOOR_4) == FLOOR4);
+         fct_chk(transition(INBETWEEN2AND3_DOWN, CAB_POSITION_FLOOR_2) == FLOOR2);
+         fct_chk(transition(INBETWEEN2AND3_UP, CAB_POSITION_FLOOR_3) == FLOOR3);
+         fct_chk(transition(INBETWEEN3AND4_DOWN, CAB_POSITION_FLOOR_3) == FLOOR3);
+         fct_chk(transition(INBETWEEN3AND4_UP, CAB_POSITION_FLOOR_4) == FLOOR4);
 
          fct_chk(transition(FLOOR2, CALL_FLOOR_3) == GOINGUPTO3);
          fct_chk(transition(FLOOR2, CALL_FLOOR_4) == GOINGUPTO4);
