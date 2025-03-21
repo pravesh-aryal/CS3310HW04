@@ -49,6 +49,7 @@ FCT_BGN()
          fct_chk(transition(FLOOR3, CALL_FLOOR_3) == FLOOR3);
          fct_chk(transition(FLOOR4, CALL_FLOOR_4) == FLOOR4);
 
+         
          printf("\n");
       }
       FCT_TEST_END();
