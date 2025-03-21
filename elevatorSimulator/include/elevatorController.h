@@ -44,7 +44,7 @@ extern "C"
         INBETWEEN3AND4_UP,
         INBETWEEN3AND4_DOWN,
         //,
-        GOINDDNTO2
+        GOINGDNTO2
     } elevatorStateEnum;
 
     void controller_tick();
