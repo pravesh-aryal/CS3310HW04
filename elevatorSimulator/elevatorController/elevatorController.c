@@ -91,6 +91,20 @@ typedef struct
 // 	/*GOINGDNTO2*/ {{NONE}, ___________{NONE}, _________{NONE}, __________{NONE}, __________{NONE}, ____________{FLOOR2}, ____________{NONE}, _________________{NONE}, ______________{NONE}, _______________{NONE}, ______________{NONE}, ___________{NONE}, _______{NONE}, ___________{NONE}, ___________{NONE}, _______{NONE}, _______{NONE}, ________{NONE}, _________{NONE}, __________{NONE}}};
 
 //my modification
+// OFF,
+// INIT,
+// FLOOR2,
+// FLOOR3, 
+// FLOOR4, 
+// //
+// DOOR_IS_OPEN,
+// DOOR_IS_CLOSING,
+// DOOR_IS_OBSTRUCTED,
+// DOOR_IS_CLOSED,
+// INBETWEEN2AND3_UP,
+// INBETWEEN2AND3_DOWN,
+// INBETWEEN3AND4_UP,
+// INBETWEEN3AND4_DOWN
 const stateInfo_t fsm[FLOOR4 + 1][REQ_BELL_RELEASED + 1] = {
     /*                      TIMER_EXPIRED        POWER_ON           DOOR_IS_OPEN        DOOR_IS_CLOSED      DOOR_IS_OBSTRUCTED   CAB_POSITION_FLOOR_2  CAB_POSITION_FLOOR_2_5  CAB_POSITION_FLOOR_3  CAB_POSITION_FLOOR_3_5  CAB_POSITION_FLOOR_4  CALL_FLOOR_2        CALL_FLOOR_3        CALL_FLOOR_4        REQ_DOOR_OPEN       REQ_STOP            REQ_FLOOR_2         REQ_FLOOR_3         REQ_FLOOR_4         REQ_BELL_PRESSED    REQ_BELL_RELEASED */
     /* OFF          */    {{NONE},              {INIT},              {NONE},              {NONE},              {NONE},              {NONE},              {NONE},                {NONE},               {NONE},                {NONE},               {NONE},              {NONE},              {NONE},              {NONE},              {NONE},              {NONE},              {NONE},              {NONE},              {NONE}},
