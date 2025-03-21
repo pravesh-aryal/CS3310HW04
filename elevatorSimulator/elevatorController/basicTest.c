@@ -30,19 +30,19 @@ FCT_BGN()
          fct_chk(transition(INBETWEEN3AND4_DOWN, CAB_POSITION_FLOOR_3) == FLOOR3);
          fct_chk(transition(INBETWEEN3AND4_UP, CAB_POSITION_FLOOR_4) == FLOOR4);
 
-         fct_chk(transition(FLOOR2, CALL_FLOOR_3) == GOINGUPTO3);
-         fct_chk(transition(FLOOR2, CALL_FLOOR_4) == GOINGUPTO4);
-         fct_chk(transition(FLOOR3, CALL_FLOOR_2) == GOINGDNTO2);
-         fct_chk(transition(FLOOR3, CALL_FLOOR_4) == GOINGUPTO4);
-         fct_chk(transition(FLOOR4, CALL_FLOOR_2) == GOINGDNTO2);
-         fct_chk(transition(FLOOR4, CALL_FLOOR_3) == GOINGDNTO3);
+         fct_chk(transition(FLOOR2, CALL_FLOOR_3) == INBETWEEN2AND3_UP);
+         fct_chk(transition(FLOOR2, CALL_FLOOR_4) == INBETWEEN2AND3_UP);
+         fct_chk(transition(FLOOR3, CALL_FLOOR_2) == INBETWEEN2AND3_DOWN);
+         fct_chk(transition(FLOOR3, CALL_FLOOR_4) == INBETWEEN3AND4_UP);
+         fct_chk(transition(FLOOR4, CALL_FLOOR_2) == INBETWEEN3AND4_DOWN);
+         fct_chk(transition(FLOOR4, CALL_FLOOR_3) == INBETWEEN3AND4_DOWN);
 
-         fct_chk(transition(FLOOR2, REQ_FLOOR_3) == GOINGUPTO3);
-         fct_chk(transition(FLOOR2, REQ_FLOOR_4) == GOINGUPTO4);
-         fct_chk(transition(FLOOR3, REQ_FLOOR_2) == GOINGDNTO2);
-         fct_chk(transition(FLOOR3, REQ_FLOOR_4) == GOINGUPTO4);
-         fct_chk(transition(FLOOR4, REQ_FLOOR_2) == GOINGDNTO2);
-         fct_chk(transition(FLOOR4, REQ_FLOOR_3) == GOINGDNTO3);
+         fct_chk(transition(FLOOR2, REQ_FLOOR_3) == INBETWEEN2AND3_UP);
+         fct_chk(transition(FLOOR2, REQ_FLOOR_4) == INBETWEEN2AND3_UP);
+         fct_chk(transition(FLOOR3, REQ_FLOOR_2) == INBETWEEN2AND3_DOWN);
+         fct_chk(transition(FLOOR3, REQ_FLOOR_4) == INBETWEEN3AND4_UP);
+         fct_chk(transition(FLOOR4, REQ_FLOOR_2) == INBETWEEN3AND4_DOWN);
+         fct_chk(transition(FLOOR4, REQ_FLOOR_3) == GOINGDNINBETWEEN3AND4_DOWNTO3);
 
          /* these events should be ignored */
          fct_chk(transition(FLOOR2, CALL_FLOOR_2) == FLOOR2);
