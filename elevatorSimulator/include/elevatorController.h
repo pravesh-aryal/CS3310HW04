@@ -38,10 +38,7 @@ extern "C"
         FLOOR3, 
         FLOOR4, 
         //
-        DOOR_IS_OPEN,
         DOOR_IS_CLOSING,
-        DOOR_IS_OBSTRUCTED,
-        DOOR_IS_CLOSED,
         INBETWEEN2AND3_UP,
         INBETWEEN2AND3_DOWN,
         INBETWEEN3AND4_UP,
