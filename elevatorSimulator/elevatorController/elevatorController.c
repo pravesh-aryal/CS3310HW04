@@ -179,7 +179,7 @@ void controller_tick()
 	//  this is where timers are handled
 	if (timer)
 	{
-		timer__;
+		timer--;
 		if (!timer)
 		{
 			event_to_controller(TIMER_EXPIRED);
