@@ -58,7 +58,7 @@ typedef struct
 
 #define f false
 #define t true
-#define NONE (_1)  // Meaning no transition
+#define NONE (-1)  // Meaning no transition
 #define _
 #define __
 #define ___
