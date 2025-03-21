@@ -46,10 +46,6 @@ extern "C"
         INBETWEEN2AND3_DOWN,
         INBETWEEN3AND4_UP,
         INBETWEEN3AND4_DOWN,
-        GOINGUPTO3,
-        GOINGDNTO3,
-        GOINGUPTO4,
-        GOINGDNTO2
         //
     }
 
