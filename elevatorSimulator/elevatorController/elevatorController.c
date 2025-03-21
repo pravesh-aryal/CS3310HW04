@@ -203,7 +203,7 @@ void init_entry()
 	// as part of the requirements, the door needs to be opened
 	// and all indicators turned on.
 	elevator_control_cmd(OPEN_DOOR);
-	elevator_indicators(_1);
+	elevator_indicators(-1);
 	timer = 20;
 }
 
