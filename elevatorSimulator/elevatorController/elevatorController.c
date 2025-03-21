@@ -266,15 +266,30 @@ void goingupto4_state_entry()
 // This function is important for debugging and is unique for the state diagram
 const char *elevatorStateEnumNames(elevatorStateEnum e)
 {
+	// assert(e >= OFF && e <= GOINGDNTO2);
+	// const char *n[] = {"OFF",
+	// 				   "INIT",
+	// 				   "FLOOR2",
+	// 				   "FLOOR3",
+	// 				   "FLOOR4",
+	// 				   "GOINGUPTO3",
+	// 				   "GOINGDNTO3",
+	// 				   "GOINGUPTO4",
+	// 				   "GOINGDNTO2"};
+	// return n[e];}
 	assert(e >= OFF && e <= GOINGDNTO2);
 	const char *n[] = {"OFF",
 					   "INIT",
 					   "FLOOR2",
 					   "FLOOR3",
 					   "FLOOR4",
-					   "GOINGUPTO3",
-					   "GOINGDNTO3",
-					   "GOINGUPTO4",
+					   "DOOR_IS_CLOSING",
+					   "INBETWEEN2AND3_UP",
+					   "INBETWEEN2AND3_DOWN",
+					   "INBETWEEN3AND4_UP",
+					   "INBETWEEN3AND4_DOWN",
+					   //,
 					   "GOINGDNTO2"};
 	return n[e];
+
 }
