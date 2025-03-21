@@ -42,7 +42,7 @@ FCT_BGN()
          fct_chk(transition(FLOOR3, REQ_FLOOR_2) == INBETWEEN2AND3_DOWN);
          fct_chk(transition(FLOOR3, REQ_FLOOR_4) == INBETWEEN3AND4_UP);
          fct_chk(transition(FLOOR4, REQ_FLOOR_2) == INBETWEEN3AND4_DOWN);
-         fct_chk(transition(FLOOR4, REQ_FLOOR_3) == GOINGDNINBETWEEN3AND4_DOWNTO3);
+         fct_chk(transition(FLOOR4, REQ_FLOOR_3) == INBETWEEN3AND4_DOWN);
 
          /* these events should be ignored */
          fct_chk(transition(FLOOR2, CALL_FLOOR_2) == FLOOR2);
